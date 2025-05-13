@@ -8,7 +8,7 @@ skeleton/config.txt
 chmod +x fájlnév.sh
 
 ## Gyakorlás
-```
+```bash
 === Konstansok ===
 USER_PREFIX="user"
 USER_START=1
@@ -67,7 +67,7 @@ echo "A konfigurációs fájl kiosztása sikeresen megtörtént."
 ```
 
 ### A program kezeljen még egy műveletet torol néven. A program a kioszt művelethez hasonlóan bekér az intervallum elejét végét és kiosztott fájlt, fájlokat törli. A program minden felhasználónál írja ki, hogy fájlokat törlőt.
-```
+```bash
 # === TOROL művelet ===
 elif [ "$1" == "torol" ]; then
     for i in $(seq -f "%02g" $AA $BB); do
@@ -85,7 +85,7 @@ fi
 ```
 
 ### A program ne csak a config.txt fájllal foglalkozzon hanem a skeleton könyvtárban lévő egyéb fájlokkal is. A müködésének nem kell rekurzívnak lennie. Ennek a feladtrésznek a teszteléséhez a skeleton könyvtárban ell kell helyezni még néhány teszt fájlt. Ezek neve tartalma tetszőleges
-```
+```bash
 # === Konstansok ===
 USER_PREFIX="user"
 USER_START=1
@@ -174,7 +174,7 @@ Használata: ./felhasznalok.sh kioszt    ./felhasznalok.sh torol
 
 ### A program kezeljen még egy műveletet ures néven. Ennek választása esetén a program ellenőrizze hogy a kiválasztott felhasználói könyvtárak üresek-e
 
-```
+```bash
 # === Művelet: URES ===
 elif [ "$1" == "ures" ]; then
     for i in $(seq -f "%02g" $AA $BB); do
@@ -192,7 +192,7 @@ fi
 
 ### A program kezeljen még egy műveletet extra néven. Ennek a választása esetén a program ellenőrizze , hogy a kiválasztott felhasználói könyvtárakban van-e olyan fájl ami a skeletonban nem szerepel. A program írja ki az extra fájlok nevét
 
-```
+```bash
 # === Művelet: EXTRA ===
 elif [ "$1" == "extra" ]; then
     if [ ! -d "$SKELETON_DIR" ]; then
@@ -236,7 +236,7 @@ fi
 
 ### A program kezeljen műveleteken kívül további tetszőlegesen sok paramétert is. Ezek felhasználók könyvtárai. Ebben az esetben ezekkel dolgozzon és ne kérje be az intervallum első és utolsó elemét.
 
-```
+```bash
 # === Felhasználói könyvtárak listájának előkészítése ===
 user_dirs=()
 
