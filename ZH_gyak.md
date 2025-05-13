@@ -66,7 +66,7 @@ done
 echo "A konfigurációs fájl kiosztása sikeresen megtörtént."
 ```
 
-### A program kezeljen még egy műveletet torol néven. A program a kioszt művelethez hasonlóan bekér az intervallum elejét végét és kiosztott fájlt, fájlokat törli. A program minden felhasználónál írja ki, hogy fájlokat törlőt.
+## A program kezeljen még egy műveletet torol néven. A program a kioszt művelethez hasonlóan bekér az intervallum elejét végét és kiosztott fájlt, fájlokat törli. A program minden felhasználónál írja ki, hogy fájlokat törlőt.
 ```bash
 # === TOROL művelet ===
 elif [ "$1" == "torol" ]; then
@@ -84,7 +84,7 @@ elif [ "$1" == "torol" ]; then
 fi
 ```
 
-### A program ne csak a config.txt fájllal foglalkozzon hanem a skeleton könyvtárban lévő egyéb fájlokkal is. A müködésének nem kell rekurzívnak lennie. Ennek a feladtrésznek a teszteléséhez a skeleton könyvtárban ell kell helyezni még néhány teszt fájlt. Ezek neve tartalma tetszőleges
+## A program ne csak a config.txt fájllal foglalkozzon hanem a skeleton könyvtárban lévő egyéb fájlokkal is. A müködésének nem kell rekurzívnak lennie. Ennek a feladtrésznek a teszteléséhez a skeleton könyvtárban ell kell helyezni még néhány teszt fájlt. Ezek neve tartalma tetszőleges
 ```bash
 # === Konstansok ===
 USER_PREFIX="user"
@@ -172,7 +172,7 @@ fi
 
 Használata: ./felhasznalok.sh kioszt    ./felhasznalok.sh torol
 
-### A program kezeljen még egy műveletet ures néven. Ennek választása esetén a program ellenőrizze hogy a kiválasztott felhasználói könyvtárak üresek-e
+## A program kezeljen még egy műveletet ures néven. Ennek választása esetén a program ellenőrizze hogy a kiválasztott felhasználói könyvtárak üresek-e
 
 ```bash
 # === Művelet: URES ===
@@ -190,7 +190,7 @@ elif [ "$1" == "ures" ]; then
 fi
 ```
 
-### A program kezeljen még egy műveletet extra néven. Ennek a választása esetén a program ellenőrizze , hogy a kiválasztott felhasználói könyvtárakban van-e olyan fájl ami a skeletonban nem szerepel. A program írja ki az extra fájlok nevét
+## A program kezeljen még egy műveletet extra néven. Ennek a választása esetén a program ellenőrizze , hogy a kiválasztott felhasználói könyvtárakban van-e olyan fájl ami a skeletonban nem szerepel. A program írja ki az extra fájlok nevét
 
 ```bash
 # === Művelet: EXTRA ===
@@ -234,7 +234,7 @@ elif [ "$1" == "extra" ]; then
 fi
 ```
 
-### A program kezeljen műveleteken kívül további tetszőlegesen sok paramétert is. Ezek felhasználók könyvtárai. Ebben az esetben ezekkel dolgozzon és ne kérje be az intervallum első és utolsó elemét.
+## A program kezeljen műveleteken kívül további tetszőlegesen sok paramétert is. Ezek felhasználók könyvtárai. Ebben az esetben ezekkel dolgozzon és ne kérje be az intervallum első és utolsó elemét.
 
 ```bash
 # === Felhasználói könyvtárak listájának előkészítése ===
